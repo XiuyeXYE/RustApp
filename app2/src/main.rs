@@ -85,6 +85,22 @@ fn output2(object: &dyn Descriptive) {
     println!("{}", object.describe());
 }
 
+// impl BI for Descriptive{
+//     fn f(&self){
+//         println!("f ds");
+//     }
+// }
+impl BI for dyn Descriptive{
+    fn f(&self){
+        println!("f ds");
+    }
+}
+// impl BI for impl Descriptive{
+//     fn f(&self){
+//         println!("f ds");
+//     }
+// }
+
 
 fn main() {
     
