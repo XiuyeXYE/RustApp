@@ -81,7 +81,7 @@ fn output(object: impl Descriptive) {
 // fn output<T: Descriptive>(object: T) {
 //     println!("{}", object.describe());
 // }
-fn output2(object: &dyn Descriptive) {
+fn  output2<'a>(object: &'a dyn Descriptive) {
     println!("{}", object.describe());
 }
 
