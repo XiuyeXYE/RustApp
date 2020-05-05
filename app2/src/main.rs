@@ -127,5 +127,9 @@ fn main() {
     println!("{}", cali.describe());
     output(&cali);
     output2(&cali);
+    output2(&cali);
+    output2(&cali);
+    
+    
 
 }
